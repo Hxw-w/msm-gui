@@ -1,4 +1,14 @@
 class MoviesController < ApplicationController
+  def create
+    # Retrieve the user's input from params
+    # Create a record in the movie table
+    # Populate each column with teh user input
+    # Save
+
+    # Redirect the user back to the /movie URL
+    
+  end
+  
   def index
     matching_movies = Movie.all
     @list_of_movies = matching_movies.order({ :created_at => :desc })
